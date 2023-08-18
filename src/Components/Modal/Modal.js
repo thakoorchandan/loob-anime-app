@@ -31,7 +31,7 @@ const Modal = ({ setOpenModal, content, isModalOpen, refreshAnime }) => {
             className="modalText"
             dangerouslySetInnerHTML={{ __html: content?.text }}
           />
-          <image
+          <img
             src={content.thumbNailImage}
             alt="thumbnail image"
             className="modalImage"
