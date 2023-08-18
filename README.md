@@ -1,5 +1,7 @@
 lobb-assignment
 
+Clone the Repo and run "npm install" to install all the dependencies, then run the command "npm run start" to run the project locally
+
 <h1>Lobb Anime Application</h1>
 <hr><p>Simple Anime Application</p><h2>General Information</h2>
 <hr><ul>
