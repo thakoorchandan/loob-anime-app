@@ -12,13 +12,13 @@ function Home({ token }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
+    getRefreshAnime();
     const date = new Date();
     setCurrentDate({
       weekDay: date.toLocaleString("en-IN", { weekday: "long" }).toUpperCase(),
       day: date.toLocaleString("en-IN", { day: "numeric" }),
       month: date.toLocaleString("en-IN", { month: "long" }).toUpperCase(),
     });
-    getRefreshAnime();
   }, [token]);
 
   const getRefreshAnime = () => {
@@ -40,11 +40,7 @@ function Home({ token }) {
         }}
         className="card-header"
       >
-        <image
-          className="headerImage"
-          src={anime?.mainImage}
-          alt="card banner"
-        />
+        <img className="headerImage" src={anime?.mainImage} alt="card banner" />
       </div>
       <CardFooter
         animeContent={anime}

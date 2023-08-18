@@ -17,7 +17,7 @@ const Modal = ({ setOpenModal, content, isModalOpen, refreshAnime }) => {
           &times;
         </span>
         <div>
-          <image
+          <img
             src={content.mainImage}
             alt="main image"
             className="modalImage"
